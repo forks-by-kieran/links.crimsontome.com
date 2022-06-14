@@ -1,0 +1,47 @@
+version: "3.0"
+services:
+  littlelink-server:
+    image: ghcr.io/techno-tim/littlelink-server:latest
+    # dockerhub is also supported timothystewart6/littlelink-server
+    # image: timothystewart6/littlelink-server:latest
+    container_name: littlelink-server
+    environment:
+      - META_TITLE=CrimsonTome
+      - META_DESCRIPTION=Linux Sysadmin and FOSS Enthusiast
+      - META_AUTHOR=CrimsonTome
+      - LANG=en
+      - META_INDEX_STATUS=all
+      - OG_SITE_NAME=CrimsonTome
+      - OG_TITLE=CrimsonTome
+      - OG_DESCRIPTION=The home of CrimsonTome
+      - OG_URL=https://crimsontome.com
+      - GA_TRACKING_ID=G-XXXXXXXXXX
+      - THEME=Dark
+      - AVATAR_URL=https://https://avatars.githubusercontent.com/u/64846840?v=4
+      - AVATAR_2X_URL=https://https://avatars.githubusercontent.com/u/64846840?v=4
+      - AVATAR_ALT=   
+      - NAME=CrimsonTome
+      - BIO=The home of CrimsonTomes links
+      - BUTTON_ORDER=YOUTUBE,TWITTER,GITHUB,Blog,LINKEDIN,GITEA,PrivateBin
+      # use ENV variable names for order, listed buttons will be boosted to the top
+      # you can render an unlimited amount of custom buttons by adding 
+      # the CUSTOM_BUTTON_* variables and by using a comma as a separator.
+      - CUSTOM_BUTTON_TEXT=Blog,PasteBin Service
+      - CUSTOM_BUTTON_URL=https://blog.crimsontome.com,https://paste.crimsontome.com
+      - CUSTOM_BUTTON_COLOR=#000000,#000000,#000000,#000000
+      - CUSTOM_BUTTON_TEXT_COLOR=#ffffff,#ffffff,#ffffff,#ffffff
+      - CUSTOM_BUTTON_ALT_TEXT=My blog,LinkedIn,Gitea,PrivateBin
+      - CUSTOM_BUTTON_NAME=BLOG,LinkedIn,Gitea,PrivateBin
+      - CUSTOM_BUTTON_ICON=fas file-alt,fas file-alt,fas file-alt,fas file-alt
+      - GITHUB=https://github.com/crimsontome
+      - TWITTER=https://twitter.com/ctome427
+      - YOUTUBE=https://www.youtube.com/channel/UCrxIJeb-FW_rFBQ19LRZSaQ
+      - LINKED_IN=https://www.linkedin.com/in/matt-clark-aa776b1b4/
+      - GITEA=https://git.crimsontome.com
+      - FOOTER=CrimsonTome © 2022
+
+    ports:
+      - 8090:3000
+    restart: unless-stopped
+    security_opt:
+      - no-new-privileges:true
