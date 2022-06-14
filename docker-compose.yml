@@ -22,22 +22,24 @@ services:
       - AVATAR_ALT=   
       - NAME=CrimsonTome
       - BIO=The home of CrimsonTomes links
-      - BUTTON_ORDER=YOUTUBE,TWITTER,GITHUB,Blog,LINKEDIN,GITEA,PrivateBin
-      # use ENV variable names for order, listed buttons will be boosted to the top
-      # you can render an unlimited amount of custom buttons by adding 
-      # the CUSTOM_BUTTON_* variables and by using a comma as a separator.
-      - CUSTOM_BUTTON_TEXT=Blog,PasteBin Service
-      - CUSTOM_BUTTON_URL=https://blog.crimsontome.com,https://paste.crimsontome.com
-      - CUSTOM_BUTTON_COLOR=#000000,#000000,#000000,#000000
-      - CUSTOM_BUTTON_TEXT_COLOR=#ffffff,#ffffff,#ffffff,#ffffff
-      - CUSTOM_BUTTON_ALT_TEXT=My blog,LinkedIn,Gitea,PrivateBin
-      - CUSTOM_BUTTON_NAME=BLOG,LinkedIn,Gitea,PrivateBin
-      - CUSTOM_BUTTON_ICON=fas file-alt,fas file-alt,fas file-alt,fas file-alt
+      - BUTTON_ORDER=YOUTUBE,TWITTER,GITHUB,BLOG,LINKEDIN,GITEA,PRIVATEBIN
       - GITHUB=https://github.com/crimsontome
       - TWITTER=https://twitter.com/ctome427
       - YOUTUBE=https://www.youtube.com/channel/UCrxIJeb-FW_rFBQ19LRZSaQ
       - LINKED_IN=https://www.linkedin.com/in/matt-clark-aa776b1b4/
       - GITEA=https://git.crimsontome.com
+      - PRIVATEBIN=https://paste.crimsontome.com
+      # use ENV variable names for order, listed buttons will be boosted to the top
+      # you can render an unlimited amount of custom buttons by adding 
+      # the CUSTOM_BUTTON_* variables and by using a comma as a separator.
+      - CUSTOM_BUTTON_TEXT=Blog
+      - CUSTOM_BUTTON_URL=https://blog.crimsontome.com
+      - CUSTOM_BUTTON_COLOR=#000000
+      - CUSTOM_BUTTON_TEXT_COLOR=#ffffff
+      - CUSTOM_BUTTON_ALT_TEXT=My blog
+      - CUSTOM_BUTTON_NAME=BLOG
+      - CUSTOM_BUTTON_ICON=fas file-alt
+
       - FOOTER=CrimsonTome © 2022
 
     ports:
