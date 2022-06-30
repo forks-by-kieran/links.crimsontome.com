@@ -18,7 +18,7 @@ services:
       - GA_TRACKING_ID=G-XXXXXXXXXX
       - THEME=Dark
       - AVATAR_URL=https://avatars.githubusercontent.com/u/64846840?v=4
-      - AVATAR_2X_URL=https://https://avatars.githubusercontent.com/u/64846840?v=4
+      - AVATAR_2X_URL=https://avatars.githubusercontent.com/u/64846840?v=4
       - AVATAR_ALT=   
       - NAME=CrimsonTome
       - BIO=The home of CrimsonTomes links
