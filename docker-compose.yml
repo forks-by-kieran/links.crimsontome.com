@@ -17,7 +17,7 @@ services:
       - OG_URL=https://crimsontome.com
       - GA_TRACKING_ID=G-XXXXXXXXXX
       - THEME=Dark
-      - AVATAR_URL=https://https://avatars.githubusercontent.com/u/64846840?v=4
+      - AVATAR_URL=https://avatars.githubusercontent.com/u/64846840?v=4
       - AVATAR_2X_URL=https://https://avatars.githubusercontent.com/u/64846840?v=4
       - AVATAR_ALT=   
       - NAME=CrimsonTome
@@ -28,7 +28,7 @@ services:
       - YOUTUBE=https://www.youtube.com/channel/UCrxIJeb-FW_rFBQ19LRZSaQ
       - LINKED_IN=https://www.linkedin.com/in/matt-clark-aa776b1b4/
       - GITEA=https://git.crimsontome.com
-      - PRIVATEBIN=https://paste.crimsontome.com
+      - PRIVATEBIN=https://paste.crimsontome.com/
       # use ENV variable names for order, listed buttons will be boosted to the top
       # you can render an unlimited amount of custom buttons by adding 
       # the CUSTOM_BUTTON_* variables and by using a comma as a separator.
